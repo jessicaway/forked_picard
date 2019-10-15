@@ -419,7 +419,7 @@ task updateGhPages(dependsOn: ['copyJavadoc', 'copyPicardDoc']){
 updateGhPages.finalizedBy gitPublishPush
 
 gitPublish {
-    repoUri = 'git@github.com:jessicaway/picard.git'
+    repoUri = 'git@github.com:jessicaway/forked_picard.git'
     branch = 'gh-pages'
     preserve { include '**/*' }
     contents {
