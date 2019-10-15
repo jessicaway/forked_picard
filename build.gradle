@@ -426,5 +426,11 @@ gitPublish {
         from('build/docs/html') {
             into 'newdocs'
         }
+        from('build/docs/html/picarddoc') {
+            into '.'
+            include '*.html'
+            include '*.css'
+
+        }
     }
 }
